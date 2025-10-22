@@ -13,6 +13,7 @@ public class NotificadorEmail extends Notificador {
 
     @Override
     public boolean enviar(String mensagem, String destinatario) {
+        System.out.println("------------------------");
         System.out.println("Enviar e-mail para: " + destinatario);
         System.out.println("Assunto: " +this.assunto);
         System.out.println("Corpo: " + mensagem);
@@ -21,6 +22,7 @@ public class NotificadorEmail extends Notificador {
         System.out.println("E-mail enviado com sucesso");
 
         registrarLog(sucesso);
+        System.out.println("------------------------");
         
         return false;
     }
