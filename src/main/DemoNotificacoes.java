@@ -9,7 +9,7 @@ import notificador.Notificador;
 public class DemoNotificacoes {
 
     public static void main(String[] args) {
-        SistemaDeNotificacoes sistema = new SistemaDeNotificacoes();
+        SistemaDeNotificacao sistema = new SistemaDeNotificacao();
 
         // Cenário 1: Notificação por E-mail com assunto (sem alteração)
         Notificador email = new NotificadorEmail("TX12345", "Confirmação de Pedido");
